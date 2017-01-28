@@ -40,7 +40,7 @@ android {
     }
 
     applicationVariants.all { variant ->
-        "package${variant.name.capitalize()}" {
+        "generate${variant.name.capitalize()}Resources" {
             dependsOn inspect
         }
         "test${variant.name.capitalize()}UnitTest" {
